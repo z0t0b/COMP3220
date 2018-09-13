@@ -75,12 +75,12 @@ ___
 
 #### License
 
-Auburn University
+CENSORED
 
 ___
 
 #### Author
 
-Zachary Bedsole
+CENSORED
 
 ___
