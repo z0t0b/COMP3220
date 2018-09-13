@@ -1,4 +1,4 @@
-# Dr. Li, TA: Jay Patel(jsp0053@auburn.edu)
+# CENSORED
 # COMP3220 - 002 : Programming Languages
 # Project_1
 
