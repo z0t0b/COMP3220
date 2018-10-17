@@ -131,8 +131,8 @@ ___
 ___
 
 #### License
-[REDACTED]
+CENSORED
 ___
 
 ## Author
-[REDACTED]
+CENSORED
