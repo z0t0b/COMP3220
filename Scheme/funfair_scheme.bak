@@ -1,0 +1,8 @@
+#lang racket
+(require (planet dyoo/simply-scheme:1:2/simply-scheme))
+
+(define (ball-val color)
+           )
+
+(define (count-balls color bucket)
+           (count (keep (lambda (c) (equal? color c)) bucket)))
