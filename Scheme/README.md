@@ -131,8 +131,8 @@ ___
 ___
 
 #### License
-Auburn University
+[REDACTED]
 ___
 
 ## Author
-Zachary Bedsole
+[REDACTED]
