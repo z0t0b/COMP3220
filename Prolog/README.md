@@ -20,7 +20,7 @@ path_to_phone(X,X).
 
 ___
 
-#### Summary
+### Summary
 For this programming assignment, we will be writing a program in Prolog that will tell us how to get from one
 room of a one-story building, to any other room in that building (if it’s possible), by telling us all of the rooms we
 must go through to get to the destination room. In addition to the previous statement, there will be phones ringing in
