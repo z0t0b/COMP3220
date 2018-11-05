@@ -199,7 +199,7 @@ path_to_phone(Start, End). % Nothing is given
 ___
 
 #### License
-Auburn University
+CENSORED
 ___
 
 ## Author
