@@ -104,9 +104,6 @@ next_to(1,2).
 #### next_to will return 'yes' if the rooms are next to each other (as in the above call), and 'no' if they are not next to each other. This predicate uses door(X,Y) to evaluate this.
 ___
 
-#### find_path uses move_forward and move_backward to find a path.
-___
-
 ## move(Start,End,T,H)
 ```prolog
 % Used when Starting room and ending room are the same
@@ -150,7 +147,7 @@ ___
 
 ## return_paths(Start,End)
 ```prolog
-return_paths(Start,End):-
+return_paths(Start,End) :-
   var(T),
   forall(make_path(Start,End,T),nl).
 ```
