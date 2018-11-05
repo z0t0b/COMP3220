@@ -115,8 +115,8 @@ move(Start,Start,T,[Start|T]).
 % Used to move from one room to another (if possible)
 move(Start,End,T,H) :-
    next_to(Start,NextRoom),
-	 \+(member(NextRoom,T)), 
-	 move(NextRoom,End,[Start|T],H).
+   \+(member(NextRoom,T)), 
+   move(NextRoom,End,[Start|T],H).
 ```
 #### This predicate will move forward to another room if there is a room next to it (verified with next_to) that can be moved to.
 #### Has two versions: comments for both will highlight the differences. 
@@ -139,11 +139,11 @@ ___
 ```prolog
 find_path(Start,End,T) :-
   var(T),
-	T = [],
-	move(Start,End,T,X),
-	reverse_order(X,Path,[]),
+  T = [],
+  move(Start,End,T,X),
+  reverse_order(X,Path,[]),
   nl,
-	write(Path).
+  write(Path).
 ```
 #### This predicate will find the path from a starting number to an ending number.
 ___
@@ -152,7 +152,7 @@ ___
 ```prolog
 return_paths(Start,End):-
   var(T),
-	forall(make_path(Start,End,T),nl).
+  forall(make_path(Start,End,T),nl).
 ```
 ```prolog
 return_paths(1,16).
@@ -164,33 +164,33 @@ ___
 ```prolog
 % Predicate for when start and end is given
 path_to_phone(Start,End) :-
-	nonvar(Start),
-	nonvar(End),
+  nonvar(Start),
+  nonvar(End),
   phone(End),
   return_paths(Start,End),
   fail.
 
 % Predicate for when only start is given
 path_to_phone(Start,End) :-
-	nonvar(Start),
-	var(End),
+  nonvar(Start),
+  var(End),
   forall(phone(Room),(return_paths(Start,Room))),
-	fail.
+  fail.
 
 % Predicate for when only end is given
 path_to_phone(Start,End) :-
-	var(Start),
-	nonvar(End),
+  var(Start),
+  nonvar(End),
   phone(End),
   forall(room(Room),(return_paths(Room,End))),
-	fail.
+  fail.
 
 % Predicate for when nothing is given
 path_to_phone(Start,End) :-
-	var(Start),
-	var(End),
+  var(Start),
+  var(End),
   forall(phone(Room2),forall(room(Room1),(return_paths(Room1,Room2)))),
-	fail.
+  fail.
 ```
 ```prolog
 path_to_phone(1, 16). % Both parameters are given
