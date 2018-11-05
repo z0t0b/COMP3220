@@ -195,8 +195,7 @@ path_to_phone(1, End). % Start is the only thing given
 path_to_phone(Start, 16). % End is the only thing given
 path_to_phone(Start, End). % Nothing is given
 ```
-#### path_to_phone has four predicates: one where the start and end are given, one where the start is only given, one where 
-#### the end is only given, and one where only nothing is given. They are all listed above on how to call them.
+#### path_to_phone has four predicates: comments for each will highlight the differences
 ___
 
 #### License
