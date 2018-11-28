@@ -1,5 +1,5 @@
-project Zachary_Bedsole_P4 is
+project Ada is
     for Source_Dirs use ("src");
     for Object_Dir use "obj";
     for Main use ("main.adb");
-end Zachary_Bedsole_P4;
+end Ada;
